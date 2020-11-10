@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <html lang="en">
+    <title>Seinfeld Quiz App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+</body>
+<div id="page">
+   <div class="questionsheader">
+      <h1>Seinfeld Quiz</h1>  
+    <main class="mainquestion" role="main">
+          <h2 class = "questionnum">Question ${qnum+1} out of ${STORE.length}</h2>
+          <h2 class="status">You have scored ${points} out of a possible ${(qnum*10)} points</h2>
+          <h2 class = "q">${STORE[qnum].question}</h2>
+          <form class="questionnum">
+            <fieldset>
+            <div class="block"><label for="choice1"></label><input type="radio" checked name="option" value=${STORE[qnum].options[0]} id="choice1" required>${STORE[qnum].options[0]}</div>
+            <div class="block"><label for="choice2"></label><input type="radio"  name="option" value=${STORE[qnum].options[1]} id="choice2" required>${STORE[qnum].options[1]}</div>
+            <div class="block"><label for="choice3"></label><input type="radio"  name="option" value=${STORE[qnum].options[2]} id="choice3" required>${STORE[qnum].options[2]}</div>
+            <div class="block"><label for="choice4"></label><input type="radio"  name="option" value=${STORE[qnum].options[3]} id="choice4" required>${STORE[qnum].options[3]}</div>
+            <input type="submit" value="Submit Answer" id="enteranswer">
+            </fieldset>
+          </form>
+    </main>
+      <section class="questionresult" role="contentinfo"></div>
+      </div>
+      </div>
+</html>
